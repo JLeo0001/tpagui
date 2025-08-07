@@ -61,7 +61,7 @@ public class BedrockFormManager {
                     }
 
                     // 构建命令
-                    String command = isTpaHere ? "/tpahere " + targetName : "/tpa " + targetName;
+                    String command = isTpaHere ? "/tphere " + targetName : "/tpa " + targetName; // <-- 修改点
                     
                     // 记录到控制台
                     TpaGui.getInstance().getLogger().info(player.getName() + " 通过GUI执行命令: " + command);
@@ -184,4 +184,4 @@ public class BedrockFormManager {
             e.printStackTrace();
         }
     }
-} 
+}
