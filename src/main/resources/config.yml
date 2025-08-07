@@ -1,5 +1,5 @@
 messages:
-  prefix: "&7[&bTpaGui&7] "
+  prefix: "&7[&b传送菜单&7] "
   console-list-header: "&a当前在线玩家列表:"
   console-list-format: "&7- &f{player}"
   player-offline: "&c该玩家已离线！"
@@ -32,8 +32,6 @@ messages:
 # 命令配置
 commands:
   accept:
-    - "tpaccept"
-#    - "tpaaccept"
+    - "tpyes"
   deny:
-    - "tpdeny"
-#    - "tpadeny"
+    - "tpno"
