@@ -22,10 +22,10 @@ jobs:
         uses: actions/checkout@v4
 
       # 第二步：设置 Java 环境。现代插件开发通常使用 Java 17。
-      - name: Set up JDK 17
+      - name: Set up JDK 21
         uses: actions/setup-java@v4
         with:
-          java-version: '17'
+          java-version: '21'
           distribution: 'temurin'
           cache: 'maven' # 自动缓存 Maven 依赖
 
