@@ -61,7 +61,7 @@ public class MenuListener implements Listener {
                 // 构建命令
                 String command = event.isLeftClick() ? 
                     "/tpa " + target.getName() : 
-                    "/tpahere " + target.getName();
+                    "/tphere " + target.getName(); // <-- 修改点
                 
                 // 记录到控制台
                 TpaGui.getInstance().getLogger().info(player.getName() + " 通过GUI执行命令: " + command);
@@ -78,4 +78,4 @@ public class MenuListener implements Listener {
             }
         }
     }
-} 
+}
