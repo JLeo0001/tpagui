@@ -16,7 +16,7 @@ public class TpaRequestListener implements Listener {
         String command = event.getMessage().toLowerCase();
         
         // 检查是否是tpa相关命令
-        if (!command.startsWith("/tpa ") && !command.startsWith("/tpahere ")) {
+        if (!command.startsWith("/tpa ") && !command.startsWith("/tphere ")) { // <-- 修改点
             return;
         }
         
@@ -36,15 +36,15 @@ public class TpaRequestListener implements Listener {
             BedrockFormManager.sendTpaRequestForm(
                 target, 
                 event.getPlayer().getName(), 
-                command.startsWith("/tpahere ")
+                command.startsWith("/tphere ") // <-- 修改点
             );
             
             // 调试信息
             TpaGui.getInstance().getLogger().info(
                 "发送传送请求表单给 " + target.getName() + 
                 " 从 " + event.getPlayer().getName() + 
-                " 类型: " + (command.startsWith("/tpahere ") ? "tpahere" : "tpa")
+                " 类型: " + (command.startsWith("/tphere ") ? "tphere" : "tpa") // <-- 修改点
             );
         }
     }
-} 
+}
